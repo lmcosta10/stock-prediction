@@ -2,8 +2,8 @@
 # https://www.tensorflow.org/tutorials/structured_data/time_series?hl=pt-br
 
 import tensorflow as tf
+import keras
 import numpy as np
-import matplotlib.pyplot as plt
 
 class WindowGenerator():
     def __init__(self, input_width, label_width, shift,
@@ -60,7 +60,7 @@ class WindowGenerator():
 
     def make_dataset(self, data):
         data = np.array(data, dtype=np.float32)
-        ds = tf.keras.utils.timeseries_dataset_from_array(
+        ds = keras.utils.timeseries_dataset_from_array(
             data=data,
             targets=None,
             sequence_length=self.total_window_size,
