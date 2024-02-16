@@ -1,0 +1,1 @@
+Alessio, S. (2022). Stock Price Forecasting by a Deep Convolutional Generative Adversarial Network. Frontiers in Artificial Intelligence 5, 2624-8212. doi: 10.3389/frai.2022.837596
